@@ -8,7 +8,7 @@ namespace SelectionSort
 {
     class BINARY_SEARCH
     {
-        static int[] Ary = new int[] { 1,2,4,6,7,8,9,15,17,19};
+        static int[] Ary = new int[] { 1, 2, 4, 6, 7, 8, 9, 15, 17, 19};
         static int value = 17;
         static int counter = 0;
         static void unUse(string[] args)
@@ -17,7 +17,7 @@ namespace SelectionSort
             // [Recursive]
             // ans = BSRecursive(Ary, value, start, end);
             // [Iterative]
-            // ans = BSIterative(Ary, value, start, end);
+             ans = BSIterative(Ary, value, start, end);
             Console.WriteLine(ans);
             Console.Read();
         }
@@ -26,7 +26,7 @@ namespace SelectionSort
         {
 
             int mid = (low + high) / 2;
-            Console.WriteLine("第{3}次RSC: low:{0}, high:{1}, mid:{2} ", low, high, A[mid], counter++);
+            Console.WriteLine("The {3} times RSC: low:{0}, high:{1}, mid:{2} ", low, high, A[mid], counter++);
 
             if (low <= high)
             {
@@ -45,7 +45,7 @@ namespace SelectionSort
             while (low <= high)
             {
                 int mid = (low + high) / 2;
-                Console.WriteLine("第{3}次RSC: low:{0}, high:{1}, mid:{2} ", low, high, A[mid], counter++);
+                Console.WriteLine("The {3} times RSC: low:{0}, high:{1}, mid:{2} ", low, high, A[mid], counter++);
 
                 if (A[mid] == v)
                     return mid;
